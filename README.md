@@ -23,7 +23,7 @@ Due to the limitations in specifications of Captum, we are unable to run DeepLIF
 Currently, DiffPool (and its variant DiffPoolD) as well as the calculations of qualitative metrics do not support batch processing, this will be added in the future.
 
 ### Experiment Results
-You can view our findings when we have successfully publish our paper.
+You can view our findings when we have successfully publish our paper: Interpretable Graph Classification
 
 ## Description
 ### Architecture
