@@ -1,0 +1,71 @@
+general:
+  data_autobalance: False
+  print_dataset_features: True
+  batch_size: 1
+  extract_features: False
+run:
+  num_epochs : 50
+  learning_rate : 0.0001
+  seed: 1800
+  k_fold: 5
+GNN_models:
+  DGCNN:
+    convolution_layers_size : 32-32-32-1
+    sortpooling_k : 0.6
+    n_hidden : 128
+    convolution_dropout: 0.5
+    pred_dropout : 0.5
+    FP_len : 0
+  GCN:
+    convolution_layers_size : 128-256-512
+    dropout: 0.5
+  GCND:
+    convolution_layers_size: 128-256-512
+    dropout: 0.5
+  DiffPool:
+    convolution_layers_size : 64-64-64
+    pred_hidden_layers: 50-50-50
+    assign_ratio: 0.25
+    number_of_pooling: 1
+    concat_tensors: False
+  DiffPoolD:
+    convolution_layers_size : 64-64-64
+    pred_hidden_layers: 50-50-50
+    assign_ratio: 0.25
+    number_of_pooling: 1
+    concat_tensors: False
+interpretability_methods:
+  DeepLIFT:
+    enabled: False
+    compare_with_zero_tensor: True
+    compare_with_isomorphic_samples: True
+    number_of_zero_tensor_samples: 3
+    sample_ids:
+    number_of_isomorphic_sample_pairs: 5
+  saliency:
+    enabled: False
+    number_of_samples: 3
+    sample_ids:
+  LayerGradCAM:
+    enabled: True
+    number_of_samples: 3
+    sample_ids:
+    layer: 0
+    assign_attribution: hard
+metrics:
+  fidelity:
+    enabled: True
+    importance_range: 0.5,1
+  contrastivity:
+    enabled: True
+    importance_range: 0.5,1
+  sparsity:
+    enabled: True
+    importance_range: 0.5,1
+custom_visualisation_options:
+  GNN_models:
+    DiffPool:
+      cluster_nodes: True
+  dataset:
+    MUTAG:
+      custom_mapping: {"0": "C","1": "N","2": "O","3": "F","4": "I","5": "Cl","6": "Br"}

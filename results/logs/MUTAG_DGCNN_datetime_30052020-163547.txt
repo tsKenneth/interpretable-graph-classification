@@ -1,0 +1,22 @@
+==== Dataset Information ====
+== General Information == 
+Number of graphs: 188
+Number of classes: 2
+Class distribution: 
+0:63 1:125 
+
+== Node information== 
+Average number of nodes: 18
+Average number of edges (undirected): 20
+Max number of nodes: 28
+Number of distinct node labels: 7
+Average number of distinct node labels: 3
+Node labels distribution: 
+0:2395 1:345 2:593 3:12 4:1 5:23 6:2 
+Run statistics: 
+Accuracy (avg): 0.84566 ROC_AUC (avg): 0.88949 PRC_AUC (avg): 0.93011 
+Qualitative metrics for method DeepLIFT - Fidelity (avg): 0.11113 Contrastivity (avg): 0.1208 Sparsity (avg): 0.72377
+Time taken to generate saliency scores: 17.06
+Qualitative metrics for method saliency - Fidelity (avg): 0.02092 Contrastivity (avg): 0.13856 Sparsity (avg): 0.59165
+Time taken to generate saliency scores: 11.25162
+
