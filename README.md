@@ -182,9 +182,9 @@ Node features are binary except for callgraph. In callgraph a node (i.e., a func
 features (opcodes) within a node (function).
 
 ### Authors
-Arijit Khan - Assistant Professor, Nanyang Technological University, School of Computer Science and Engineering
-Teo Tian Shun Kenneth https://github.com/tsKenneth - Nanyang Technological University, School of Computer Science and Engineering
-Eko Edita https://github.com/ekoeditaa - Nanyang Technological University, School of Computer Science and Engineering
+* **Arijit Khan** - Assistant Professor, Nanyang Technological University, School of Computer Science and Engineering
+* **Teo Tian Shun Kenneth** - Nanyang Technological University, School of Computer Science and Engineering
+* **Eko Edita** - Nanyang Technological University, School of Computer Science and Engineering
 
 ### References
 ```
