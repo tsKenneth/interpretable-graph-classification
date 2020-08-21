@@ -181,6 +181,10 @@ Node features are binary except for callgraph. In callgraph a node (i.e., a func
 (about 4) features (i.e., frequent opcodes), and we store in the feature matrix the count of these
 features (opcodes) within a node (function).
 
+### Authors
+Arijit Khan - Assistant Professor, Nanyang Technological University, School of Computer Science and Engineering
+Teo Tian Shun Kenneth https://github.com/tsKenneth - Nanyang Technological University, School of Computer Science and Engineering
+Eko Edita https://github.com/ekoeditaa - Nanyang Technological University, School of Computer Science and Engineering
 
 ### References
 ```
