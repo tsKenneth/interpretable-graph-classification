@@ -1,3 +1,8 @@
+## An Evaluation of Backpropagation Interpretability for Graph Classification with Deep Learning
+2020 IEEE International Conference on Big Data, December 10-13, 2020, Virtual
+Kenneth Teo Tian Shun, Eko Edita Limanta, and Arijit Khan
+Nanyang Technological University, Singapore
+
 ## Running the Code
 ### Requirements:
 This codebase requires running on Linux OS. For Windows users, consider the Windows Subsystem for Linux (https://docs.microsoft.com/en-us/windows/wsl/install-win10). Experiment was performed on Ubuntu 18.04, with CUDA version 10.1 and PyTorch version 1.5.
