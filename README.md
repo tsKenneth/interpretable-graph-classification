@@ -1,7 +1,7 @@
 ## An Evaluation of Backpropagation Interpretability for Graph Classification with Deep Learning
-2020 IEEE International Conference on Big Data, December 10-13, 2020, Virtual
-Kenneth Teo Tian Shun, Eko Edita Limanta, and Arijit Khan
-Nanyang Technological University, Singapore
+<b>2020 IEEE International Conference on Big Data, December 10-13, 2020, Virtual</b></br>
+<i>Kenneth Teo Tian Shun, Eko Edita Limanta, and Arijit Khan</i></br>
+<i>Nanyang Technological University, Singapore</i>
 
 ## Running the Code
 ### Requirements:
@@ -28,7 +28,7 @@ Due to the limitations in specifications of Captum, we are unable to run DeepLIF
 Currently, DiffPool (and its variant DiffPoolD) as well as the calculations of qualitative metrics do not support batch processing, this will be added in the future.
 
 ### Experiment Results
-You can view our findings when we have successfully publish our paper: Interpretable Graph Classification
+You can view our findings when we have successfully publish our paper.
 
 ## Description
 ### Architecture
