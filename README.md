@@ -10,7 +10,7 @@
 This codebase requires running on Linux OS. For Windows users, consider the Windows Subsystem for Linux (https://docs.microsoft.com/en-us/windows/wsl/install-win10). Experiment was performed on Ubuntu 18.04, with CUDA version 10.1 and PyTorch version 1.5.
 
 ### Setup
-1. Install Python 3, . Optionally, you can install CUDA for faster training times if you have own a Nvidia GPU
+1. Install Python 3, . Optionally, you can install CUDA for faster training times if your system have a Nvidia GPU
    - (Optional) Install and create a virtual environment
    - Install PyTorch version 1.5
 2. Install the requirements found in requirements.txt using `pip install -r requirements.txt`
@@ -19,10 +19,13 @@ This codebase requires running on Linux OS. For Windows users, consider the Wind
    - gm=<GCN,GCND,DGCNN,DiffPool,DiffPoolD>: determine which model to use
    - data=<MUTAG,NCI-H23,TOX21_AR,PTC_FR,Callgraph>: determine which dataset to train on
    - retrain=<0,1>: decide whether to retrain the model. Previously trained models are stored in tmp/saved_models.
-   - For example: `python3 main.py cuda=1 -gm=DGCNN -data=PTC_FR -retrain=0` trains a DGCNN model using the PTC_FR dataset while using the GPU
+   - For example: `python3 main.py cuda=1 -gm=DGCNN -data=PTC_FR -retrain=0` trains a DGCNN model using the PTC_FR dataset on the GPU
    - Additional run options can be found in config.yml
 
 4. Collect your results from the results subdirectory, where log contains the information that is shown at the end of the execution while images contains the saliency visualisations
+
+### Adding new models or using new interpretability method from Captum
+Check out the README files in the models and intepretability_method sub-directories to learn more about how you can add new Graph Convolutional Neural Network models and integrate new interpretability methods.
    
 ### Known Issues
 Due to the limitations in specifications of Captum, we are unable to run DeepLIFT on version 0.2.0 as the changes from 0.1.0 to 0.2.0 did not consider our use case for graphs. Additionally, we required version 0.2.0 to run LayerGradCAM. Hence, we used version switching to run our experiments as and when the intepretability method is required. For LayerGradCAM, it is mostly used for images. Hence, you have to edit the library in site-packages -> captum -> attr -> _core -> layer -> grad_cam.py line 210: change to dim=0.
